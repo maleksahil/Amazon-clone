@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign-in page</title>
-</head>
-
-<body>
     <style>
+
+        .page{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red;
+            background-color: chartreuse; */
+            
+        }
         img {
             height: 100px;
             width: 200px;
-            margin-left: 690px;
-            margin-bottom: -45px;
+            
         }
 
         * {
@@ -25,15 +34,11 @@
         }
 
         .signin {
-           
-            justify-content: center;
-            align-items: center;
+
+            border: 1px solid black;
             height: 550px;
             width: 350px;
-            margin-top: -10px;
             text-align: center;
-            position: relative;
-            margin-left: 600px;
             border-radius: 10px;
             text-align: left;
             font-size: 1.5rem;
@@ -78,6 +83,7 @@
 
         a {
             text-decoration: none;
+            
             /* background-color: white; */
         }
 
@@ -100,37 +106,58 @@
             padding: 0 10px;
         }
 
-        .account{
+        .account {
             background-color: white;
+            position: relative;
+            bottom: 5%;
         }
 
-        #account{
+        #account {
             color: black;
             background-color: white;
+           
         }
 
-        #account:hover{
+        #account:hover {
             background-color: orange;
         }
-    </style>
-    <a href="index.html"><img src="amazon.png" alt=""></a>
-    <div class="signin">
-        <h1>Sign in</h1>
-        <label for="number">Enter your mobile phone number</label>
-        <input type="number" id="number" name="number">
-        <button>continue</button>
-        <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
-        <details style="background-color: white;">
-            <summary style="background-color: white; font-size: 20px;">Need help</summary>
-            <a href="" style="background-color: white; font-size: 20px;">forgot your password</a><br>
-            <a href="" style="background-color: white; font-size: 20px;">other issues with sign-in</a>
-        </details>
-        <hr>
-        <p style="font-weight: 600;">Buying for work?</p>
-        <a href="" style="background-color: white; font-size: 20px;">Shop on amazon business</a>
-        <h2><span>New to Amazon</span></h2>
-        <button class="account"><a href="account.html" id="account">create an account</a></button>
 
+        #image{
+            display: flex;
+            justify-content: center;
+            height: 130px;
+            width: 100%;
+            /* border: 1px solid black;
+            background-color: aqua; */
+            position: absolute;
+            top: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image"><a href="index.html"><img src="amazon.png" alt="amazon logo"></a></div>
+    <div class="page">
+        
+        <div class="signin">
+            
+            <h1>Sign in</h1>
+            <label for="number">Enter your mobile phone number</label>
+            <input type="number" id="number" name="number">
+            <button>continue</button>
+            <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            <details style="background-color: white;">
+                <summary style="background-color: white; font-size: 20px;">Need help</summary>
+                <a href="" style="background-color: white; font-size: 20px;">forgot your password</a><br>
+                <a href="" style="background-color: white; font-size: 20px;">other issues with sign-in</a>
+            </details>
+            <hr>
+            <p style="font-weight: 600;">Buying for work?</p>
+            <a href="" style="background-color: white; font-size: 20px;">Shop on amazon business</a>
+            <h2><span>New to Amazon</span></h2>
+            <button class="account"><a href="account.html" id="account">create an account</a></button>
+
+        </div>
     </div>
 </body>
 

@@ -17,6 +17,9 @@
 
 }
 
+.panel-all{
+    display: none;
+}
 .nav-logo{
     height: 50px;
     width: 100px;
@@ -191,7 +194,7 @@ justify-content: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
     height: 400px;
-    width: 23%;
+    width: 300px;
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 50px;
@@ -224,18 +227,26 @@ justify-content: space-evenly;
     margin-bottom: -20px;
     font-size: 30px;
     padding-top: 50px;
+    padding-bottom: 30px;
     padding-left: 50px;
 }
 .bigbox{
     /* border: 1px solid red; */
     margin-top: 0px;
-    padding: 50px;
+    /* padding: 50px; */
     background-color: white;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.cart{
+    height: 280px;
+    width: 180px;
 }
 
 
@@ -314,4 +325,71 @@ a{
 .copyrights{
     padding-top: 5px;
     
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .panel{
+        display: none;
+    }
+
+    .add-first{
+        display: none;
+    }
+
+    .add-icon{
+        display: none;
+    }
+
+    .add-second{
+        display: none;
+    }
+
+    .nav-search{
+        display: none;
+    }
+
+    .nav-first{
+        display: none;
+    }
+
+    .nav-second{
+        display: none;
+    }
+
+    .nav-cart{
+        display: none;
+    }
+
+    .logo{
+        height: 70px;
+        width: 150px;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+    .panel-all{
+        display: block;
+        position: absolute;
+        right: 5%;
+        
+    }
+    
+}
+
+@media screen and (max-width:425px) and (min-width:320px) {
+    footer ul a{
+        font-size: 0.5rem;
+    }
+
+    footer ul p{
+        font-size: 0.5rem;
+    }
+
+    .hero-msg{
+        font-size: 0.5rem;
+    }
+
+    .hero-msg a {
+        font-size: 0.5rem;
+    }
 }

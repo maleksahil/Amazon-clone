@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>create your account</title>
-</head>
-
-<body>
     <style>
+        .page {
+            width: 100%;
+            height: 150vh;
+            position: absolute;
+            top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red;
+            background-color: chartreuse; */
+
+        }
+
         img {
             height: 100px;
             width: 200px;
-            margin-left: 690px;
-            margin-bottom: 0px;
+
         }
 
         * {
@@ -26,14 +35,12 @@
         }
 
         .signin {
-           
+
             justify-content: center;
             align-items: center;
             height: 800px;
             width: 350px;
             text-align: center;
-            position: relative;
-            margin-left: 600px;
             border-radius: 10px;
             text-align: left;
             font-size: 1.5rem;
@@ -54,7 +61,7 @@
             background-color: white;
             margin-bottom: 30px;
             padding: 0px;
-            
+
         }
 
         #number {
@@ -134,34 +141,49 @@
             background-color: white;
         }
 
-        #business{
+        #business {
             background-color: white;
         }
 
-        #in{
+        #in {
             background-color: white;
+        }
+
+        .image{
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid black;
+            background-color: blue; */
+            display: flex;
+            justify-content: center;
         }
     </style>
-    <a href="index.html"><img src="amazon.png" alt=""></a>
-    <div class="signin">
-        <h1>Create account</h1>
-        <label for="name">your name</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="number">Enter your mobile phone number</label>
-        <input type="number" id="number" name="number">
-        <label for="password">password</label>
-        <input type="text" id="password" name="password">
-        <p>Passwords must be at least 6 characters.</p>
-        <label for="password2">re-enter password</label>
-        <input type="text" id="password" name="password">
-        <button>continue</button>
-        <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
-        <hr>
-        <p style="font-weight: 600;">Buying for work?</p>
-        <a href="" id="business">create a free business account</a><br><br>
-        <p>alredy have an account <a href="signup.html" id="in">sign in</a></p>
-       
+</head>
 
+<body>
+    <div class="image"><a href="index.html"><img src="amazon.png" alt=""></a></div>
+    <div class="page">
+
+        <div class="signin">
+            <h1>Create account</h1>
+            <label for="name">your name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="number">Enter your mobile phone number</label>
+            <input type="number" id="number" name="number">
+            <label for="password">password</label>
+            <input type="text" id="password" name="password">
+            <p>Passwords must be at least 6 characters.</p>
+            <label for="password2">re-enter password</label>
+            <input type="text" id="password" name="password">
+            <button>continue</button>
+            <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            <hr>
+            <p style="font-weight: 600;">Buying for work?</p>
+            <a href="" id="business">create a free business account</a><br><br>
+            <p>alredy have an account <a href="signup.html" id="in">sign in</a></p>
+
+
+        </div>
     </div>
 </body>
 
